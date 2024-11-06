@@ -8,6 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "defaultBlue": "#013440",
+        "defaultGreen": "#026873",
+        "defaultTurq": "#2AB0BF",
+        "defaultGray": "#C5D7D9",
+        "defaultOrange": "#F28241",
       },
     },
   },
