@@ -1,13 +1,20 @@
 import Image from "next/image";
 import Header from "@/components/header";
 import Capa from "../../../assets/posts/capa_introducao.png"
+import Retangulo from "../../../assets/symbols/retangulo.svg"
+import Paralelogramo from "../../../assets/symbols/paralelogramo.svg"
+import Losango from "../../../assets/symbols/losango.svg"
+import Oval from "../../../assets/symbols/oval.svg"
+import Seta from "../../../assets/symbols/seta.svg"
+import Chaves from "../../../assets/symbols/chaves.svg"
+import TimeToCode from "@/components/timeToCode";
 
 export default function Introducao() {
     return (
         <>
             <Header />
             <div className="w-full h-full flex flex-col items-center justify-start">
-                <div className="w-full max-w-[1050px] h-full mt-12">
+                <div className="w-full max-w-[450px] md:max-w-[700px] lg:max-w-[1150px] h-full mt-12 px-12 sm:px-0">
                     <div className="w-full flex flex-col items-start justify-start gap-12">
                         <Image 
                             src={Capa}
@@ -131,16 +138,157 @@ export default function Introducao() {
                                 </div>
                                 <div className="space-y-2">
                                     <h2 className="text-black text-2xl font-semibold tracking-wide">Benefícios de Algoritmos Eficientes</h2>
-                                    <p className="text-base text-defaultText">Um algoritmo é uma sequência finita de passos para resolver um problema ou realizar uma tarefa. É o coração da lógica de programação, e sua eficiência é essencial para garantir a otimização de recursos e o bom funcionamento dos sistemas. Ao aprender lógica de programação, desenvolvemos a habilidade de criar algoritmos que identificam variáveis, utilizam estruturas de controle (como loops e condicionais), e fazem uso de estruturas de dados apropriadas.</p>
+                                    <ul className="list-disc space-y-2 px-6 text-base text-black font-semibold">
+                                        <li>Economizam tempo e recursos.</li>
+                                        <li>Simplificam a manutenção do código.</li>
+                                        <li>Garantem a funcionalidade desejada de forma clara e direta.</li>                                
+                                    </ul>
                                 </div>
                                 <div className="space-y-2">
                                     <h2 className="text-black text-2xl font-semibold tracking-wide">Fluxogramas</h2>
                                     <p className="text-base text-defaultText">São representações gráficas da lógica e sequência de etapas de um algoritmo. Eles ajudam a visualizar de forma simples o fluxo de controle de um programa, facilitando a compreensão da estrutura lógica por trás do código e como um algoritmo funciona e auxiliam o desenvolvedor a mapear as sequências antes de elas serem implementadas.</p>
                                     <p className="text-base text-defaultText">Fluxogramas foram criados na década de 1920 por engenheiros industriais para melhorar a eficiência de processos de trabalho. Com o tempo, passaram a ser amplamente usados na programação e na ciência da computação.</p>
                                 </div>
+                                <div className="space-y-2">
+                                    <h2 className="text-black text-2xl font-semibold tracking-wide">Tipos de Fluxogramas</h2>
+                                    <p className="text-base text-defaultText">Existem vários tipos de fluxogramas, cada um com um propósito específico:  </p>
+                                    <ul className="list-disc space-y-2 px-6 text-base text-black font-semibold">
+                                        <li>
+                                            <p className="text-sm text-defaultText">
+                                                <span className="text-black text-base font-semibold">Fluxograma de Processo: </span>
+                                                Mostra o fluxo de um processo de trabalho ou industrial e como as etapas de um processo se alinham para atingir o resultado esperado.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p className="text-sm text-defaultText">
+                                                <span className="text-black text-base font-semibold">Fluxograma de Sistema: </span>
+                                                Representa a estrutura geral de um sistema, focando em como os dados fluem entre os componentes. 
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p className="text-sm text-defaultText">
+                                                <span className="text-black text-base font-semibold">Fluxograma de Programa: </span>
+                                                Descreve algoritmos e a lógica de um programa, sendo o mais usado em programação.                                            
+                                            </p>
+                                        </li>                                
+                                    </ul>
+                                </div>
+                                <div className="space-y-6">
+                                    <h2 className="text-black text-2xl font-semibold tracking-wide">Padrões de Símbolos</h2>
+                                    <p className="text-base text-defaultText">Como o fluxograma possui uma larga abrangência em diferentes ocasiões e áreas, há uma necessidade de padronização dos elementos utilizados para designar as diferentes atividades dentro do mesmo. Por isso os símbolos usados em fluxogramas são padronizados pela ISO (International Organization for Standardization) e ANSI (American National Standards Institute), garantindo dessa forma a consistência, facilitando a leitura e compreensão em diferentes contextos.</p>
+                                    <p className="text-base text-defaultText">Podemos citar alguns dos símbolos utilizados frequentemente nos fluxogramas:</p>
+                                    <div className="flex flex-col items-start justify-start gap-2">
+                                        <ul className="list-disc">
+                                            <li>
+                                                <p className="text-sm text-defaultText">
+                                                    <span className="text-black text-base font-semibold">Retângulo: </span>
+                                                    Que representa uma ação, como por exemplo um cálculo:
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <Image 
+                                            src={Retangulo}
+                                            alt="Símbolo do retângulo"
+                                            width={200}
+                                            height={200}
+                                        />
+                                    </div>
+                                    <div className="flex flex-col items-start justify-start gap-2">
+                                        <ul className="list-disc">
+                                            <li>
+                                                <p className="text-sm text-defaultText">
+                                                    <span className="text-black text-base font-semibold">Paralelogramo: </span>
+                                                    indica uma Entrada ou Saída de Dados: 
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <Image 
+                                            src={Paralelogramo}
+                                            alt="Símbolo do paralelogramo"
+                                            width={200}
+                                            height={200}
+                                        />
+                                    </div>
+                                    <div className="flex flex-col items-start justify-start gap-2">
+                                        <ul className="list-disc">
+                                            <li>
+                                                <p className="text-sm text-defaultText">
+                                                    <span className="text-black text-base font-semibold">Losango: </span>
+                                                    mostra uma decisão (por exemplo, "se" ou "enquanto"):
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <Image 
+                                            src={Losango}
+                                            alt="Símbolo do losango"
+                                            width={200}
+                                            height={200}
+                                        />
+                                    </div>
+                                    <div className="flex flex-col items-start justify-start gap-2">
+                                        <ul className="list-disc">
+                                            <li>
+                                                <p className="text-sm text-defaultText">
+                                                    <span className="text-black text-base font-semibold">Oval: </span>
+                                                    marca o início ou fim do processo:
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <Image 
+                                            src={Oval}
+                                            alt="Símbolo do oval"
+                                            width={200}
+                                            height={200}
+                                        />
+                                    </div>
+                                    <div className="flex flex-col items-start justify-start gap-2">
+                                        <ul className="list-disc">
+                                            <li>
+                                                <p className="text-sm text-defaultText">
+                                                    <span className="text-black text-base font-semibold">Seta: </span>
+                                                    representa a conexão entre dois elementos, indicando a direção do processo e o fluxo entre as atividades:
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <Image 
+                                            src={Seta}
+                                            alt="Símbolo da seta"
+                                            width={200}
+                                            height={200}
+                                        />
+                                    </div>
+                                    <div className="flex flex-col items-start justify-start gap-2">
+                                        <ul className="list-disc">
+                                            <li>
+                                                <p className="text-sm text-defaultText">
+                                                    <span className="text-black text-base font-semibold">Chave: </span>
+                                                    utilizada para inserir comentários ao longo do fluxograma:
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <Image 
+                                            src={Chaves}
+                                            alt="Símbolo das chaves"
+                                            width={200}
+                                            height={200}
+                                        />
+                                    </div>
+                                </div>
+                                <TimeToCode />
                             </div>
-                            <div className="w-1/2 h-[36rem] bg-[#F4F4F4] rounded-md shadow-md p-6">
-
+                            <div className="hidden w-1/2 h-fit lg:h-[36rem] bg-[#F4F4F4] rounded-md shadow-md p-6 md:flex md:flex-col items-start justify-start gap-6">
+                                <h2 className="text-black text-2xl font-semibold tracking-wide">Tópicos</h2>
+                                <ul className="list-disc space-y-2 px-6 text-base text-black font-medium">
+                                    <li>Programação</li>
+                                    <li>Por que Aprender Programação?</li>
+                                    <li>Linguagens de Programação e Seus Tipos</li>
+                                    <li>Lógica de Programação</li>
+                                    <li>Importância da Lógica de Programação</li>
+                                    <li>Algoritmos</li>
+                                    <li>Benefícios de Algoritmos Eficientes</li>
+                                    <li>Fluxogramas</li>
+                                    <li>Padrões de Símbolos</li>
+                                </ul>
                             </div>
                         </div>
                     </div>

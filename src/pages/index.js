@@ -6,6 +6,7 @@ import CardExpressao from "../assets/cards/card-expressoes-condicionais.jpg"
 import CardIntro from "../assets/cards/card-introducao.jpg"
 import CardCond from "../assets/cards/card-operadores-expressoes.jpg"
 import CardWelcome from "../assets/cards/card-welcome.jpg"
+import Quiz from "@/components/quiz";
 
 export default function Home() {
 
@@ -22,7 +23,7 @@ export default function Home() {
     <>
       <Header />
       <div className="w-full flex flex-col items-center justify-center">
-        <div className="flex flex-row flex-wrap items-center justify-between max-w-[1050px]">
+        <div className="flex flex-row flex-wrap items-center justify-between max-w-[1150px]">
           {
             cardOptions.map(items => {
               return <Card title={items.title} description={items.descriptions} picture={items.picture}/>
