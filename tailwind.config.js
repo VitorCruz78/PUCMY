@@ -13,6 +13,7 @@ module.exports = {
         "defaultTurq": "#2AB0BF",
         "defaultGray": "#C5D7D9",
         "defaultOrange": "#F28241",
+        "defaultText": "#717171"
       },
     },
   },
