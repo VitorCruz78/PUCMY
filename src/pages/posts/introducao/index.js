@@ -13,8 +13,8 @@ export default function Introducao() {
     return (
         <>
             <Header />
-            <div className="w-full h-full flex flex-col items-center justify-start">
-                <div className="w-full max-w-[450px] md:max-w-[700px] lg:max-w-[1150px] h-full mt-12 px-12 sm:px-0">
+            <div className="w-full h-full flex flex-col items-center justify-start my-12">
+                <div className="w-full max-w-[450px] md:max-w-[700px] lg:max-w-[1050px] h-full px-8 sm:px-0">
                     <div className="w-full flex flex-col items-start justify-start gap-12">
                         <Image 
                             src={Capa}
