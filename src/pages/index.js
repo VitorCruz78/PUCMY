@@ -7,7 +7,10 @@ import CardIntro from "../assets/cards/card-introducao.jpg"
 import CardCond from "../assets/cards/card-operadores-expressoes.jpg"
 import CardWelcome from "../assets/cards/card-welcome.jpg"
 import Quiz from "@/components/quiz";
-
+import Exercises from "@/components/exercises";
+import CardExercises from "@/components/cardExercises";
+import Image from "next/image";
+import Capa from "../assets/CAPA.jpg"
 export default function Home() {
 
   const cardOptions = [
@@ -22,7 +25,10 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="w-full flex flex-col items-center justify-center my-12">
+      <Image
+        className="w-full"
+        src={Capa}/>
+      <div className="w-full flex flex-col items-center justify-center my-12 gap-10">
         <div className="flex flex-col justify-center md:flex md:flex-row md:flex-wrap items-center md:justify-between max-w-[1050px] gap-y-6">
           {
             cardOptions.map(items => {
@@ -35,8 +41,11 @@ export default function Home() {
             })
           }
         </div>
+          <Exercises />
+        <div>
+          <Quiz />
+        </div>
       </div>
-      {/* <Quiz /> */}
     </>
   )
 }
