@@ -48,7 +48,7 @@ export default function ExercIntroducao() {
                             </div>  
                         </div>
                     </div>
-                    <Answers />
+                    <Answers page={"introducao"} />
                 </div>
             </div>
         </>
