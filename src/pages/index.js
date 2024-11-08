@@ -26,7 +26,7 @@ export default function Home() {
     <>
       <Header />
       <Image
-        className="w-full"
+        className="hidden md:block md:h-full md:w-full"
         src={Capa}/>
       <div className="w-full flex flex-col items-center justify-center my-12 gap-10">
         <div className="flex flex-col justify-center md:flex md:flex-row md:flex-wrap items-center md:justify-between max-w-[1050px] gap-y-6">
