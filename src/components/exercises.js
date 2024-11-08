@@ -10,9 +10,9 @@ import Link from "next/link"
 const cardOptions = [
     { title: "Introdução", picture: CardIntro, link: "../posts/introducao" }, 
     { title: "Estrutura em C", picture: CardEstrutura, link: "../posts/estrutura_c" }, 
-    { title: "Expressões Condicionais", picture: CardCond }, 
-    { title: "Estrutura de Repetição", picture: CardRepeticao }, 
-    { title: "Operadores e Expressões", picture: CardExpressao}, 
+    { title: "Expressões Condicionais", picture: CardCond, link: "#" }, 
+    { title: "Estrutura de Repetição", picture: CardRepeticao, link: "#" }, 
+    { title: "Operadores e Expressões", picture: CardExpressao, link: "#"}, 
   ]
 export default function Exercises(){
     return(

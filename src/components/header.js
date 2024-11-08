@@ -19,7 +19,7 @@ export default function Header() {
                         height={50}
                         alt="Logo PUCMY" 
                     />
-                    <h1 className="text-2xl text-black font-semibold">PucMy</h1>
+                    <h1 className="text-2xl text-black font-semibold">ProgMy</h1>
                 </div>
                 <nav className="w-1/3">
                     <ul className="w-full flex flex-col items-start md:flex md:flex-row md:items-center gap-4 text-defaultBlue font-medium tracking-wide">

@@ -34,7 +34,7 @@ export default function Quiz(){
                             <Link href={"https://forms.office.com/pages/responsepage.aspx?id=RO2KG9CnnECXlrJkWUmGoHqbW1DiQVVJqoSWcSmA4x9UOVcyQjlBSDBZN0s1RUJMOFA5TVRZUDk0NC4u&route=shorturl"} target="_blank" className="text-white text-lg">Estruturas de Repetição</Link>
                         </div>
                         <div className="bg-gradient-to-r from-[#9B9ED1] to-[#444561] w-[280px] sm:w-[350px] md:w-[450px] h-12 flex flex-row justify-center items-center rounded-full">
-                            <Link href={""} target="_blank" className="text-white text-lg">Operadores Lógicos</Link>
+                            <Link href={"https://forms.office.com/pages/responsepage.aspx?id=RO2KG9CnnECXlrJkWUmGoHqbW1DiQVVJqoSWcSmA4x9UODMzT0pVTlVUSklBUUFDOThCU05GOEMwOS4u&route=shorturl"} target="_blank" className="text-white text-lg">Operadores Lógicos</Link>
                         </div>
                     </div>
                 </div>
