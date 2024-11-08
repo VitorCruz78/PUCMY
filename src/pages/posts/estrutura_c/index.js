@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Header from "@/components/header";
 import Capa from "../../../assets/posts/capa_estrutura_c.png"
-import Retangulo from "../../../assets/symbols/retangulo.svg"
-import Paralelogramo from "../../../assets/symbols/paralelogramo.svg"
-import Losango from "../../../assets/symbols/losango.svg"
-import Oval from "../../../assets/symbols/oval.svg"
-import Seta from "../../../assets/symbols/seta.svg"
-import Chaves from "../../../assets/symbols/chaves.svg"
+import ABC from "../../../assets/posts/estrutura_c/abc.png"
+import Entrada_Dados from "../../../assets/posts/estrutura_c/entrada_dados.png"
+import Entrada_Dados_Codigo from "../../../assets/posts/estrutura_c/entrada_dados_codigo.png"
+import PrintF from "../../../assets/posts/estrutura_c/printf.png"
+import ScanF from "../../../assets/posts/estrutura_c/scanf.png"
+import Processamento from "../../../assets/posts/estrutura_c/processamento.png"
 import TimeToCode from "@/components/timeToCode";
 
 export default function EstruturaC() {
@@ -78,34 +78,113 @@ export default function EstruturaC() {
                                         número informado multiplicado por 10 é igual a 40”, “seu nome fora de ordem é Tal de Fulano”, e por
                                         assim vai.
                                     </p>
-                                    <ul className="list-disc space-y-2">
-                                        <li>
-                                            <p className="text-sm text-defaultText">
-                                                <span className="text-black text-base font-semibold">Materialização de ideias criativas: </span>
-                                                Com programação é possível transformar conceitos abstratos em programas funcionais;
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p className="text-sm text-defaultText">
-                                                <span className="text-black text-base font-semibold">Melhoria da qualidade de vida: </span>
-                                                Soluções tecnológicas podem resolver problemas do dia a dia, aumentar nossa eficiência;
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p className="text-sm text-defaultText">
-                                                <span className="text-black text-base font-semibold">Expansão de oportunidades: </span>
-                                                Programadores têm oportunidades globais, como trabalhar remotamente para empresas internacionais e ganhar em moedas estrangeiras;
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p className="text-sm text-defaultText">
-                                                <span className="text-black text-base font-semibold">Desenvolvimento de habilidades analíticas e lógicas: </span>
-                                                A prática da programação ensina a resolver problemas de forma estruturada, o que é útil em qualquer campo.
-                                            </p>
-                                        </li>
-                                    </ul>
                                 </div>
-                                <TimeToCode />
+                                <div className="w-full flex flex-col justify-center items-center gap-12">
+                                    <Image
+                                        src={ABC}
+                                        alt="Exemplo de instruções"
+                                        width={500}
+                                        height={500}
+                                    />
+                                    <div className="w-full flex flex-col items-start justify-start gap-4">
+                                        <h2 className="text-black text-2xl font-semibold tracking-wide">Entrada de Dados</h2>
+                                        <p className="text-base text-defaultText">
+                                            As variáveis são locais de armazenamento em memória onde os dados podem ser
+                                            armazenados e manipulados durante a execução de um programa, elas podem ter diversos tipos,
+                                            que indicam o conteúdo que irão armazenar, alguns deles seriam:
+                                        </p>
+                                        <Image
+                                            src={Entrada_Dados}
+                                            alt="Exemplo de entrada de dados"
+                                            width={500}
+                                            height={500}
+                                        />
+                                        <p className="text-base text-defaultText">
+                                            Aqui está um exemplo de como declarar e atribuir um valor a uma variável em c:
+                                        </p>
+                                        <Image
+                                            src={Entrada_Dados_Codigo}
+                                            alt="Exemplo de entrada de dados no código"
+                                            width={500}
+                                            height={500}
+                                        />
+                                        <p className="text-base text-defaultText">
+                                            Neste exemplo a variável “idade” é declarada como um inteiro. A ela então atribuída o valor
+                                            de 25 através da atribuição de valor “ idade=25”
+                                            O valor da variável “idade” é exibido na tela pela função printf().
+                                            A execução deste programa então seria: “ minha idade é :25”.                                        </p>
+                                    </div>
+                                </div>
+                                <div className="w-full flex flex-col items-start justify-start gap-4">
+                                    <h2 className="text-black text-2xl font-semibold tracking-wide">Função Printf</h2>
+                                    <p className="text-base text-defaultText">
+                                        A função printf é parte de um conjunto de funções pré-definidas armazenadas em uma
+                                        biblioteca padrão de rotinas da linguagem C. Ela permite apresentar na tela os valores de qualquer tipo de dado.
+                                    </p>
+                                    <Image
+                                        src={PrintF}
+                                        alt="Exemplo de printf"
+                                        width={500}
+                                        height={500}
+                                    />
+                                    <p className="text-base text-defaultText">
+                                        Nesse caso a frase que vai ser impressa em tela será “olá, mundo”. Então essa é a função
+                                        de saída de dados realizada pelo comando printf.
+                                    </p>
+                                </div>
+                                <div className="w-full flex flex-col items-start justify-start gap-4">
+                                    <h2 className="text-black text-2xl font-semibold tracking-wide">Função Scanf</h2>
+                                    <p className="text-base text-defaultText">
+                                        A função scanf em C é utilizada para ler dados de entrada do usuário via teclado, ela permite a interação com o usuário recebendo informações como números ou caracteres, e atribuindo a uma
+                                        variável. Vejamos um exemplo:
+                                    </p>
+                                    <Image
+                                        src={ScanF}
+                                        alt="Exemplo de scanf"
+                                        width={500}
+                                        height={500}
+                                    />
+                                </div>
+                                <div className="w-full flex flex-col items-start justify-start gap-4">
+                                    <h2 className="text-black text-2xl font-semibold tracking-wide">Processamento de Dados</h2>
+                                    <p className="text-base text-defaultText">
+                                        O processamento de dados é uma parte fundamental no nosso programa, nela podemos executar a
+                                        lógica do nosso programa. Com o processamento podemos coletar as informações, analisar e
+                                        executar toda a lógica do programa por si só.
+                                    </p>
+                                    <Image
+                                        src={Processamento}
+                                        alt="Exemplo de processamento de dados"
+                                        width={500}
+                                        height={500}
+                                    />
+                                </div>
+                                <div className="w-full flex flex-col items-start justify-start gap-4">
+                                    <h2 className="text-black text-2xl font-semibold tracking-wide">Saída de Dados</h2>
+                                    <p className="text-base text-defaultText">
+                                        A saída de dados é uma parte crucial de qualquer programa, pois é onde apresentamos as informações ao usuário. Utilizamos a função printf para exibir resultados na tela. Essa função faz
+                                        parte da biblioteca padrão e permite formatar e apresentar dados de diversos tipos
+                                    </p>
+                                    <h2 className="text-black text-xl font-semibold tracking-wide">Exemplo de Saída Simples:</h2>
+                                    <code className="w-full p-6 border-2 border-gray-300/50 rounded-xl">
+                                        printf("Olá, mundo! \n");
+                                    </code>
+                                    <p className="text-base text-defaultText">
+                                        Aqui, \n é um caractere especial que indica uma nova linha. Isso torna a saída mais
+                                        organizada.
+                                        Quando utilizamos variáveis, a função printf pode devolver valores dinâmicos.
+                                        Por exemplo:
+                                    </p>
+                                    <code className="w-full p-6 border-2 border-gray-300/50 rounded-xl">
+                                        int idade = 25; <br></br>
+                                        printf("Minha idade é: %i \n", idade);
+                                    </code>
+                                    <p className="text-base text-defaultText">
+                                        Neste caso, %i é um especificador de formato que indica que um inteiro será exibido na
+                                        saída. O valor de idade será substituído no lugar do %i, resultando em: "Minha idade é: 25".
+                                    </p>
+                                </div>
+                                <TimeToCode link={``} />
                             </div>
                             <div className="hidden w-1/2 h-fit lg:h-[36rem] bg-[#F4F4F4] rounded-md shadow-md p-6 md:flex md:flex-col items-start justify-start gap-6">
                                 <h2 className="text-black text-2xl font-semibold tracking-wide">Tópicos</h2>

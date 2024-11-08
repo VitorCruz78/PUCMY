@@ -274,7 +274,7 @@ export default function Introducao() {
                                         />
                                     </div>
                                 </div>
-                                <TimeToCode />
+                                <TimeToCode link={`/posts/introducao/exerc`} />
                             </div>
                             <div className="hidden w-1/2 h-fit lg:h-[36rem] bg-[#F4F4F4] rounded-md shadow-md p-6 md:flex md:flex-col items-start justify-start gap-6">
                                 <h2 className="text-black text-2xl font-semibold tracking-wide">Tópicos</h2>

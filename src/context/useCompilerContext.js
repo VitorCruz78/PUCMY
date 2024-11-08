@@ -13,8 +13,16 @@ export function CompilerContextProvider({ children }) {
             <>
                 {
                     openCompiler &&
-                        <div style={{ top: "10%" }} className="fixed left-0 w-full">
-                            <div className="w-full flex flex-row items-end justify-end">
+                        <div style={{ width: "100%", top: "10%", left: 0, position: "fixed" }}>
+                            <div
+                                style={{ 
+                                    width: "100%",
+                                    display: "flex",
+                                    flexDirection: "row",
+                                    alignItems: "end",
+                                    justifyContent: "end"
+                                }}
+                            >
                                 <button 
                                     style={{ 
                                         backgroundColor: "#FF0000", 
